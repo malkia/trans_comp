@@ -1,0 +1,6 @@
+cc_binary(
+    name = "trans_comp",
+    srcs = ["trans_comp.cpp"],
+    defines = ["TBB_PREVIEW_CONCURRENT_ORDERED_CONTAINERS"],
+    linkopts = ["-ltbb"],
+)
